@@ -58,7 +58,7 @@ public class ControlFlowExercises {
 //}
 
 //        System.out.println("Please enter an integer");
-//        int num = input.nextInt();
+//        int num = Input.java.nextInt();
 //        System.out.printf("number | squared | cubed%n------ | ------- | ----");
 //        for (int i = 1; i <= num; i++) {
 //            int squared = i * i;

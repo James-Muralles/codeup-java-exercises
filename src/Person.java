@@ -1,15 +1,15 @@
 public class Person {
-    private String firstName;
-    private String lastName;
-    public static long personCount;
+    private String firstName;//property of the Person
+    private String lastName;// property of the Person
+    public static long personCount; //keeps track of
 
 
-    public Person() {
+    public Person() {//constructor wit no definitions  use setter or getter
         System.out.println("Here is a new person");
-        personCount++;
+        personCount++;//every time a person is constructed increase the count of people made
     }
 
-    public Person (String firstName, String lastName){
+    public Person (String firstName, String lastName){//constructor with properties defined
         this.firstName = firstName;
         this.lastName = lastName;
         personCount++;
@@ -20,11 +20,11 @@ public class Person {
         return firstName + " " + lastName;
         }
 
+// changes the name property to the passed value
         public void setName (String first, String last){
             this.firstName = first;
             this.lastName = last;
         }
-// changes the name property to the passed value
 
 
 
@@ -34,19 +34,22 @@ public class Person {
         };
 
     public static void main(String[] args) {
+
+//        System.out.println("Number of people: " + personCount);
+        Person p1 = new Person("Jimmy", "Muralles"); // makes new person p1 using the Person constructor with parameters
+        System.out.println(p1.getName()); //gets the name and prints it
         System.out.println("Number of people: " + personCount);
-        Person p1 = new Person("Jimmy", "Muralles");
-        System.out.println(p1.getName());
+        Person a = new Person(); // creates a new person a with properties not defined
+        a.firstName = "James"; // giving the new person a value for their firstName
+        a.lastName = "Muralles";// giving the new person a value for lastName
+        System.out.println(a.getName());//gets and prints the Person a's name
         System.out.println("Number of people: " + personCount);
-        Person a = new Person();
-        a.firstName = "James";
-        a.lastName = "Muralles";
+        a.setName("Jim", "Muralles");//changing person a's name from Jimmy to Jim
         System.out.println(a.getName());
-        System.out.println("Number of people: " + personCount);
-        a.setName("Jim", "Muralles");
         Person b = new Person("Hey", "Arnold");
         System.out.println(b.getName());
         System.out.println(personCount);
+        b.sayHello();
 
 //        Person person1 = new Person("John", "Doe");
 //        Person person2 = new Person("John", "Doe");

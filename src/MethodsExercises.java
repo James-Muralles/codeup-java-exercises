@@ -89,9 +89,9 @@ if ( b == 0){
     }
 
 
-//            Scanner input = new Scanner(System.in);
+//            Scanner Input.java = new Scanner(System.in);
 //            System.out.println("Enter number of sides");
-//            int sideInput = input.nextInt();
+//            int sideInput = Input.java.nextInt();
 
     public static String diceRoll(int dice1, int dice2) {
         Scanner input = new Scanner(System.in);

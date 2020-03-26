@@ -83,22 +83,22 @@ public class ConsoleIoLecStudent {
         /* ***************************************
                         USER INPUT
         ****************************************/
-        // The Scanner class allows us to get data input that the user enters into the console.
+        // The Scanner class allows us to get data Input.java that the user enters into the console.
         // Scanner Docs ==> http://www.cs.utexas.edu/users/ndale/Scanner.html
 
-        //TODO: Add scanner input
+        //TODO: Add scanner Input.java
 
         Scanner input = new Scanner(System.in);
 
 
         // >>>> .next() method
-        // .next() captures each input usually signified by whitespace. The input is returned as a string
+        // .next() captures each Input.java usually signified by whitespace. The Input.java is returned as a string
 
 //        System.out.println("Please enter your first, middle,J and last name.");
 //
-//        String firstName = input.next();
-//        String middleName = input.next();
-//        String lastName = input.next();
+//        String firstName = Input.java.next();
+//        String middleName = Input.java.next();
+//        String lastName = Input.java.next();
 //
 //        System.out.println(firstName);
 //        System.out.println(middleName);
@@ -107,7 +107,7 @@ public class ConsoleIoLecStudent {
         // >>>> .nextInt() method
         // .nextInt() captures the first valid int value
 //        System.out.println("Please enter your age.");
-//        int age = input.nextInt();
+//        int age = Input.java.nextInt();
 //        System.out.println(age);
 
         // >>>> .nextLine() method
@@ -120,7 +120,7 @@ public class ConsoleIoLecStudent {
          *Quirk of using next() then nextLine()...
          *https://stackoverflow.com/questions/13102045/scanner-is-skipping-nextline-after-using-next-or-nextfoo
          *
-         *That's because the Scanner.nextInt method does not read the newline character in your input created by hitting "Enter,"
+         *That's because the Scanner.nextInt method does not read the newline character in your Input.java created by hitting "Enter,"
          *the call to Scanner.nextLine returns after reading that newline.
          *You will encounter the similar behaviour when you use Scanner.nextLine() after Scanner.next()
          *or any Scanner.nextFoo method (except nextLine itself).
