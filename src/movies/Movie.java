@@ -8,19 +8,21 @@ public class Movie {
     public Movie(String name, String category) {
         this.name = name;
         this.category = category;
-        movieCount++;
     }
 
-    public String getMovie() {
+    public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getCategory() {
         return category;
     }
 
-    public void setMovie(String name, String category) {
-        this.name = name;
+    public void setCategory(String category) {
         this.category = category;
     }
 }
