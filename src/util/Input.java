@@ -2,11 +2,10 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-    private Scanner scanner;
+    private Scanner scanner;//created a property with the name scanner
 
-    public Input() {
-
-        scanner = new Scanner(System.in);
+    public Input() {// created a method called input. This will construct my scanner.
+        scanner = new Scanner(System.in);// created a new scanner in my scanner variable. Scanner is now an actual scanner
     }
 
     public String getString() {
@@ -28,7 +27,7 @@ public class Input {
     public int getInt (int min, int max){
 
         do {
-            System.out.printf("Enter an int between %d - %d: ", min, max);
+            System.out.printf("Enter an int between %d - %d: \n", min, max);
         int Input = scanner.nextInt();
         if (Input > max || Input < min) {
                 System.out.println("not within range");
