@@ -1,9 +1,12 @@
 package shapes;
 
-public class ShapesTests {
+public class ShapesTest {
     public static void main(String[] args) {
-//        Measurable myShape = new Rectangle(40,50);
-        Measurable myShape = new Square(4);
+        Measurable myShape;
+        myShape = new Rectangle(40,50);
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
+        myShape = new Square(4);
         System.out.println(myShape.getArea());
         System.out.println(myShape.getPerimeter());
 //        Rectangle box1 = new Rectangle(4.6,5.8);
