@@ -66,15 +66,18 @@ public class Input {
     public double getDouble() {
         System.out.println("Enter an number: ");
         String x = scanner.nextLine();
-        double inputDouble;
-        try {
-            inputDouble = Double.parseDouble(x);
+        double inputDouble = 0;
+        while (true) {
+            try {
+                inputDouble = Double.parseDouble(x);
+                break;
 
-        } catch (Exception e) {
-            System.out.println("Input is not a NUMBER");
-            return getDouble();
+            } catch (Exception e) {
+                System.out.println("Input is not a NUMBER");
+                return getDouble();
+            }
+
         }
-
         return inputDouble;
     }
 
