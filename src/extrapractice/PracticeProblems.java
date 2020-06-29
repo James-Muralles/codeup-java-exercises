@@ -2,7 +2,7 @@ package extrapractice;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
+import java.util.List;
 
 public class PracticeProblems {
 
@@ -95,7 +95,15 @@ public class PracticeProblems {
 //            System.out.printf("sum = %.2f\n", addSumOfArrList(list));
 //            System.out.println(nSidedShape(3));
 //            System.out.println(average(6));
+        ArrayList<Integer> coin = new ArrayList<>();
+        coin.add(5);
+        coin.add(3);
+        coin.add(1);
+        System.out.println(coin.size());
+        System.out.println(coin);
+
         System.out.println("Here is the fib sequence " + fibionacci(9));
+        System.out.println(countChange(coin,20));
 
     }
 
@@ -107,6 +115,26 @@ public class PracticeProblems {
             return fibionacci(n - 1) + fibionacci(n - 2);
         }
     }
+
+    public static int countChange(ArrayList<Integer> coins, int value ){
+        ArrayList<Integer> dispatched = new ArrayList<>();
+        for (int i = 0; i < coins.size(); i++){
+            dispatched.add(0);
+        }
+
+       for (int c = 0; value > 0; c++){
+            dispatched.set(c, (int) Math.floor(value / coins.get(c)));
+                    value -= dispatched.get(c) * coins.get(c);
+
+        }
+       int sum = 0;
+       for (int s: dispatched) {
+           sum += s;
+       }
+        return sum;
+    }
+
+
 
 
 }
