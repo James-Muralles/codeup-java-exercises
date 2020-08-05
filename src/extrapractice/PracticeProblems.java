@@ -96,14 +96,16 @@ public class PracticeProblems {
 //            System.out.println(nSidedShape(3));
 //            System.out.println(average(6));
         ArrayList<Integer> coin = new ArrayList<>();
-        coin.add(5);
+        coin.add(10);
         coin.add(3);
         coin.add(1);
         System.out.println(coin.size());
         System.out.println(coin);
 
         System.out.println("Here is the fib sequence " + fibionacci(9));
-        System.out.println(countChange(coin,20));
+        System.out.println(countChange(coin,100));
+        System.out.println(reverseString("jimmy"));
+
 
     }
 
@@ -112,6 +114,7 @@ public class PracticeProblems {
         if (n <= 1) {
             return n;
         } else {
+
             return fibionacci(n - 1) + fibionacci(n - 2);
         }
     }
@@ -133,6 +136,15 @@ public class PracticeProblems {
        }
         return sum;
     }
+
+    public static StringBuilder reverseString(String input){
+        StringBuilder reversed = new StringBuilder();
+        reversed.append(input);
+        reversed = reversed.reverse();
+        return reversed;
+
+    }
+
 
 
 
