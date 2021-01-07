@@ -1,8 +1,6 @@
 package extrapractice;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class PracticeProblems {
 
@@ -99,14 +97,16 @@ public class PracticeProblems {
         coin.add(10);
         coin.add(3);
         coin.add(1);
-        System.out.println(coin.size());
+        coin.add(9);
+        System.out.println("This is the number of coins that I have! ----->" + coin.size());
         System.out.println(coin);
 
         System.out.println("Here is the fib sequence " + fibionacci(9));
         System.out.println(countChange(coin,100));
         System.out.println(reverseString("jimmy"));
-
-
+        System.out.println(reverseNumber(1233455));
+        System.out.println(minsToSecs(40));
+        System.out.printf("the score to the game was %d ",bBallScore(20,8));
     }
 
 
@@ -144,6 +144,36 @@ public class PracticeProblems {
         return reversed;
 
     }
+
+    public static StringBuilder reverseNumber(int input){
+        StringBuilder reversedNum = new StringBuilder();
+        reversedNum.append(input);
+        reversedNum = reversedNum.reverse();
+        return reversedNum;
+
+    };
+
+// started practicing my code on 7JAN2021!!!!
+
+
+    // Write a function that takes an integer minutes and converts it to seconds.
+
+    public static int minsToSecs1(int input ){
+        return input*60;
+    };
+
+    public static String minsToSecs(int input ){
+        int ans = input * 60;
+        return String.format("my answer is %d ", ans);
+    };
+
+    // You are counting points for a basketball game, given the amount of 2-pointers scored and 3-pointers scored, find the final points for the team and return that value.
+
+    public static int bBallScore (int twoPointers, int threePointers){
+        return (twoPointers*2) + (threePointers *3);
+    };
+
+
 
 
 
