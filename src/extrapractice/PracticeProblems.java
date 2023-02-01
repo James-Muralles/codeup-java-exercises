@@ -1,7 +1,7 @@
 package extrapractice;
 
 import java.util.ArrayList;
-
+import main.FizzBuzzConverter;
 public class PracticeProblems {
 
 //    public static int HoursToSeconds(int num){
@@ -93,20 +93,24 @@ public class PracticeProblems {
 //            System.out.printf("sum = %.2f\n", addSumOfArrList(list));
 //            System.out.println(nSidedShape(3));
 //            System.out.println(average(6));
-        ArrayList<Integer> coin = new ArrayList<>();
-        coin.add(10);
-        coin.add(3);
-        coin.add(1);
-        coin.add(9);
-        System.out.println("This is the number of coins that I have! ----->" + coin.size());
-        System.out.println(coin);
-
-        System.out.println("Here is the fib sequence " + fibionacci(9));
-        System.out.println(countChange(coin,100));
-        System.out.println(reverseString("jimmy"));
-        System.out.println(reverseNumber(1233455));
-        System.out.println(minsToSecs(40));
-        System.out.printf("the score to the game was %d ",bBallScore(20,8));
+//        ArrayList<Integer> coin = new ArrayList<>();
+//        coin.add(10);
+//        coin.add(3);
+//        coin.add(1);
+//        coin.add(9);
+//        System.out.println("This is the number of coins that I have! ----->" + coin.size());
+//        System.out.println(coin);
+//
+//        System.out.println("Here is the fib sequence " + fibionacci(9));
+//        System.out.println(countChange(coin,100));
+//        System.out.println(reverseString("jimmy"));
+//        System.out.println(reverseNumber(1233455));
+//        System.out.println(minsToSecs(40));
+//        System.out.printf("the score to the game was %d ",bBallScore(20,8));
+        // System.out.println(trianglePerimeterArea(3.5,5.8));
+        
+        // FizzBuzzConverter fizzBUzz = new FizzBuzzConverter();
+        // System.out.println(fizzBUzz.convert(10));
     }
 
 
@@ -172,6 +176,18 @@ public class PracticeProblems {
     public static int bBallScore (int twoPointers, int threePointers){
         return (twoPointers*2) + (threePointers *3);
     };
+
+    //Create a function that takes length and width and finds the perimeter and area of a rectangle.
+
+    public static String trianglePerimeterArea (double l, double w){
+        String area = String.format("%.2f",l * w);
+        String perimeter = String.format("%.2f",(l * 2)+(w * 2));
+
+        return String.format("Area: %10s\nPerimeter: %s", area, perimeter );
+    };
+
+
+
 
 
 
