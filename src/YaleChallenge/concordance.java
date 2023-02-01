@@ -10,10 +10,7 @@ public class concordance {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         // add the file name path
         Scanner sc = new Scanner(
-                new File("/Users/smurfkat/IdeaProjects/codeup-java-exercises/src/YaleChallenge/test-1.txt"));// add the
-                                                                                                             // file
-                                                                                                             // name
-                                                                                                             // path
+                new File("/Users/smurfkat/IdeaProjects/codeup-java-exercises/src/YaleChallenge/test-1.txt"));
 
         Map<String, Map<Integer, Integer>> concordance = new TreeMap<>(); // used to store word frequency and sentence
                                                                           // number, Treemap allows for sorting keys
